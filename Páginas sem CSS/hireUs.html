@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Hire Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/Site sem CSS//primeiroSite.html"><img src="/imagens/logo.png" alt="Logo da SpaceX"></a>
+            - |
+            <a href="/Site sem CSS/spaceships.html">The Spaceships</a> |
+            <a href="/Site sem CSS/hireUs.html">Hire Us</a>
+        </nav>
+    </header>
+    <hr>
+
+    <div>
+        <h2>Hire Us Now</h2>
+        <p>Leave a message to requeste one of our services and we will get back to you as soon as possible.</p><br>
+    </div><br>
+
+    <section>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name"> - 
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div><br><br>
+
+            <div>
+                <label for="spaceships">Spaceships:</label>
+                <select id="spaceships">
+                    <option value="falcon9">Falcon 9</option>
+                    <option value="falconheavy" selected>Falcon Heavy</option>
+                </select> | 
+                
+                <label for="service">Type of Service:</label>
+                <input type="search" list="services" name="service" id="service">
+                <datalist id="services">
+                    <option value="Trip"></option>
+                    <option value="NASA"></option>
+                    <option value="Moon"></option>
+                    <option value="Marte"></option>
+                </datalist>
+            </div><br><br>
+
+            <div>
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
