@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header> 
+			<h2>Exemplo de layouts e formulários</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+					<li><a href="./05_layouts.html">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06_formulario.html">Formulário</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Formulátio de contato</h1>
+				<p>Preencha os campos abaixo</p>
+
+				 <form method="post">
+
+				 	<div>
+				 	<p>
+				 		<label for="nome">Nome:</label><br>
+				 		<input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui"/>
+				 	</p>
+				 		
+				 	</div>
+
+				 	<div>
+				 		<p>
+				 			<label for="email">Email:</label><br>
+				 			<input type="text" id="email" name="email" 	placeholder="Digite seu email aqui"/>
+				 		</p>
+				 	</div>
+
+				 	<div>
+				 		<p>
+				 			<label for=msg>Mensagem:</label><br>
+				 			<textarea id="msg" placeholder="Digite sua 	mensagem aqui" rows="8"></textarea>
+				 		</p>
+				 	</div>
+
+				 	<div>
+				 		<p>
+				 			<label for="linguagem">Qual linguagem você prefere?</label>
+				 			<input type="radio" name="linguagem" value="html">HTML
+				 			<input type="radio" name="linguagem" value="css">CSS
+				 			<input type="radio" name="linguagem" value="js"> JavaScript
+				 		</p>
+				 	</div>
+
+				 	<div>
+				 		<p>
+				 			<label for="linguagem">Qual linguagem você prefere?</label>
+				 			<input type="checkbox" name="linguagem" value="html">HTML
+				 			<input type="checkbox" name="linguagem" value="css">CSS
+				 			<input type="checkbox" name="linguagem" value="js"> JavaScript
+				 		</p>
+				 	</div>
+					
+					<div>
+				 		<p>
+				 			<label for="linguagem">Qual cor você prefere?</label>
+						<select>
+							<option value="Azul">Azul</option>
+							<option value="Verde">Verde</option>
+							<option value="Vermelho" selected>Vermelho</option>
+						</select>
+				 	</div>
+
+				 	<div>
+				 		<input type="submit">
+				 	</div>
+
+				 </form>
+				
+			</article>
+		</section>
+
+		<footer>
+			<h2>Desenvolido por Lindembergue</h2>
+		</footer>
+	</body>
+</html>
