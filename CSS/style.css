@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-container {
+    width: 70%;
+    height: 100%;
+    margin: 0px auto 0px auto;
+    background-color: #fffafa
+}
+
+.date {
+    color: #008080;
+}
+
+.post-container{
+    font-family: 'Roboto', sans-serif;
+}
+
+.post-container div.post-content {
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.post-container .post{
+    margin-bottom : 50px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+/* CORES
+​#f1c40f -> Amarelo
+#2c3e50 -> Azul
+#e74c3c -> Vermelho
+*/
